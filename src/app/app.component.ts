@@ -8,7 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/ui/header/header.component';
 import { FooterComponent } from './components/ui/footer/footer.component';
 import { isPlatformBrowser } from '@angular/common';
-
+import { Inject, PLATFORM_ID } from '@angular/core';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -28,6 +28,7 @@ export class AppComponent {
     public global: GlobalService,
     public scriptLoader: ScriptLoaderService,
     public loadStyle: LoadStyleService,
+    @Inject(PLATFORM_ID) private platformId: Object
 
   ) { }
   ngOnInit(): void {
@@ -35,20 +36,14 @@ export class AppComponent {
 
   }
   theme() {
-    this.loadStyle.loadStyle('assets/css/bootstrap.min.css" rel="stylesheet');
-    this.loadStyle.loadStyle('assets/css/line-awesome.min.css" rel="stylesheet');
-    this.loadStyle.loadStyle('assets/css/fontAwesomePro.css" rel="stylesheet');
-    this.loadStyle.loadStyle('assets/css/animate.css" rel="stylesheet');
-    this.loadStyle.loadStyle('assets/css/owl.carousel.css" rel="stylesheet');
-    this.loadStyle.loadStyle('assets/css/slick.css" rel="stylesheet');
-    this.loadStyle.loadStyle('assets/css/backToTop.css" rel="stylesheet');
-    this.loadStyle.loadStyle('assets/css/metismenu.css" rel="stylesheet');
-    this.loadStyle.loadStyle('assets/css/style.css" rel="stylesheet');
+    this.loadStyle.loadStyle('assets/css/plugins.css');
+    this.loadStyle.loadStyle('assets/css/style.css');
+    
 
     if (typeof document !== 'undefined') {
       this.scriptLoader
         .loadScripts([
-          'assets/js/jquery-1.12.4.min.js',
+         /*  'assets/js/jquery-1.12.4.min.js',
           'assets/js/popper.min.js',
           'assets/js/bootstrap.min.js',
           'assets/js/wow.min.js',
@@ -66,8 +61,12 @@ export class AppComponent {
           'assets/js/smoother-script.js',
           'assets/js/heading-animation.js',
           'assets/js/paragraph-animation.js',
-          'assets/js/main.js',
-        ])
+          'assets/js/main.js', */
+          'assets/js/jquery-3.0.0.min.js',
+          'assets/js/jquery-migrate-3.0.0.min.js',
+          'assets/js/plugins.js',
+          'assets/js/scripts.js',
+        ])  
         .then((data) => {
           console.log('Todos los scripts se han cargado correctamente', data);
         })
