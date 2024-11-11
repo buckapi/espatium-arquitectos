@@ -63,7 +63,7 @@ body {
   font-family: 'Poppins', sans-serif; }
 
 img {
-  width: 100%;
+  width: 80%;
   height: auto; }
 
 span, a, a:hover {
@@ -1080,7 +1080,7 @@ body {
     font-size: 40px;
     letter-spacing: 2px; }
   .section-head h6 {
-    color: #156d8f;
+    color: #d8b771;
     font-weight: 300;
     font-size: 17px;
     text-transform: uppercase;
@@ -1088,7 +1088,7 @@ body {
     margin-bottom: 10px; }
 
 .sub-title {
-  color: #156d8f;
+  color: #d8b771;
   font-family: 'Teko', sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -1110,7 +1110,7 @@ body {
   font-weight: 700; }
 
 .tit h6 {
-  color: #156d8f;
+  color: #d8b771;
   font-weight: 400;
   font-size: 22px; }
 
@@ -1414,7 +1414,7 @@ body {
       -ms-transform: translateY(0);
       transform: translateY(0); }
     .slider .parallax-slider .caption .thin {
-      color: #156d8f;
+      color: #d8b771;
       font-size: 30px;
       font-weight: 300;
       text-transform: uppercase;
@@ -1555,8 +1555,8 @@ body {
   .slid-half .nofull {
     position: relative;
     overflow: hidden;
-    background-color: #87878780;
-    background-image: url(../img/line-pattern1.png);
+    background-color: #343a40;
+    /* background-image: url(../img/line-pattern1.png); */
     background-repeat: repeat;
     height: 105vh;
     color: #fff; }
@@ -2363,7 +2363,7 @@ body {
     margin-top: 30px;
     text-align: center; }
     .work-carousel .content .cont h6 {
-      color: #156d8f;
+      color: #d8b771;
       font-size: 12px;
       font-weight: 500;
       text-transform: uppercase;
@@ -2374,7 +2374,7 @@ body {
       font-size: 24px; }
 
 .work-carousel.dark {
-  background: #87878780 !important;
+  background: #4d5054 !important;
   color: #fff; }
 
 /* ====================== [ End Work ] ====================== */
