@@ -15,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ResourcesComponent } from './components/resources/resources.component';
 import { PriceComponent } from './components/price/price.component';
+import { ProjectsdetailsComponent } from './components/projectsdetails/projectsdetails.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -28,7 +29,8 @@ import { PriceComponent } from './components/price/price.component';
     AboutComponent,
     ServicesComponent,
     ResourcesComponent,
-    PriceComponent
+    PriceComponent,
+    ProjectsdetailsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

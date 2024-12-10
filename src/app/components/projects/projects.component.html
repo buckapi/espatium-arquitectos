@@ -33,163 +33,21 @@
             </div>
 
             <!-- gallery -->
-            <div class="gallery twsty inf-lit full-width">
+            <div class="gallery twsty inf-lit full-width" *ngFor="let project of (realtimeProjects.projects$ | async)">
 
                 <!-- gallery item -->
                 <div class="items theaters four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
+                    <div class="item-img bg-img" [style.background-image]="'url(' + project.files[0] + ')'">
+                        <a (click)="global.viewProject(project)">
                             <div class="item-img-overlay"></div>
                         </a>
                     </div>
                     <div class="info mt-10">
-                        <h5>Fantastic interior</h5>
-                        <span>Interior Design</span>
+                        <h5 class="cursor-pointer" (click)="global.viewProject(project)">{{project.title}}</h5>
+                        <span>{{project.description}}</span>
                     </div>
                 </div>
 
-                <!-- gallery item -->
-                <div class="items theaters four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Fantastic interior</h5>
-                        <span>Interior Design</span>
-                    </div>
-                </div>
-
-                <!-- gallery item -->
-                <div class="items interior four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay valign"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Choose Your Dream</h5>
-                        <span>Architecture</span>
-                    </div>
-                </div>
-
-                <!-- gallery item -->
-                <div class="items residential four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay valign"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Luxury Villa</h5>
-                        <span>Architecture</span>
-                    </div>
-                </div>
-
-                <!-- gallery item -->
-                <div class="items interior theaters four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay valign"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Creative Spaces</h5>
-                        <span>Interior Design</span>
-                    </div>
-                </div>
-
-                <!-- gallery item -->
-                <div class="items interior four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay valign"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Choose Your Dream</h5>
-                        <span>Architecture</span>
-                    </div>
-                </div>
-
-                <!-- gallery item -->
-                <div class="items theaters four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Fantastic interior</h5>
-                        <span>Interior Design</span>
-                    </div>
-                </div>
-
-                <!-- gallery item -->
-                <div class="items interior four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay valign"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Choose Your Dream</h5>
-                        <span>Architecture</span>
-                    </div>
-                </div>
-
-                <!-- gallery item -->
-                <div class="items residential four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay valign"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Luxury Villa</h5>
-                        <span>Architecture</span>
-                    </div>
-                </div>
-
-                <!-- gallery item -->
-                <div class="items interior theaters four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay valign"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Creative Spaces</h5>
-                        <span>Interior Design</span>
-                    </div>
-                </div>
-
-                <!-- gallery item -->
-                <div class="items residential four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay valign"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Luxury Villa</h5>
-                        <span>Architecture</span>
-                    </div>
-                </div>
-
-                <!-- gallery item -->
-                <div class="items interior theaters four-column mt-50">
-                    <div class="item-img bg-img" data-background="assets/img/portfolio/mas/01.jpg">
-                        <a >
-                            <div class="item-img-overlay valign"></div>
-                        </a>
-                    </div>
-                    <div class="info mt-10">
-                        <h5>Creative Spaces</h5>
-                        <span>Interior Design</span>
-                    </div>
-                </div>
 
             </div>
 

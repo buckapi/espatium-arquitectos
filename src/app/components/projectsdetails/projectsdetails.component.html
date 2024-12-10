@@ -1,1 +1,196 @@
-<p>projectsdetails works!</p>
+
+
+
+
+<header class="pages-header bg-img valign parallaxie" data-background="img/portfolio/project1/bg.jpg" data-overlay-dark="5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cont text-center">
+                    <h1>{{global.projectSelected.title}}</h1>
+                    <div class="path">
+                        <a (click)="global.setRoute('home')" >Inicio</a><span>/</span><a (click)="global.setRoute('projects')">Proyectos</a><span>/</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ==================== End Header ==================== -->
+
+
+
+<!-- ==================== Start Intro ==================== -->
+
+<section class="intro-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div class="htit">
+                    <h4>Descripción</h4>
+                </div>
+            </div>
+            <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
+                <div class="text">
+                    <p>{{global.projectSelected.description}}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="item mt-30">
+                    <h6>Client</h6>
+                    <p><a href="project-details2.html#0">Envato.com</a></p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="item mt-30">
+                    <h6>Date</h6>
+                    <p>6 August 2019</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="item mt-30">
+                    <h6>Categories</h6>
+                    <p><a href="project-details2.html#0">Web Design </a>, <a href="project-details2.html#0">WordPress</a></p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="item mt-30">
+                    <h6>Tags</h6>
+                    <p><a href="project-details2.html#0">Minimal</a> , <a href="project-details2.html#0">Modern</a> , <a href="project-details2.html#0">Design</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== End Intro ==================== -->
+
+
+
+
+<!-- ==================== Start projdtal ==================== -->
+<div *ngFor="let file of global.projectSelected.files">
+  <img [src]="file" alt="Project Image">
+</div>
+<section class="projdtal">
+    <div class="justified-gallery">
+        <a *ngFor="let file of global.projectSelected.files">
+            <img [src]="file" alt="Project Image">
+        </a>
+
+       <!--  <a href="img/portfolio/project1/2.jpg">
+            <img alt="" src="img/portfolio/project1/2.jpg" />
+        </a>
+
+        <a href="img/portfolio/project1/6.jpg">
+            <img alt="" src="img/portfolio/project1/6.jpg" />
+        </a>
+        <a href="img/portfolio/project1/3.jpg">
+            <img alt="" src="img/portfolio/project1/3.jpg" />
+        </a> -->
+    </div>
+</section>
+<section class="intro-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div class="htit">
+                    <h4>Desafío</h4>
+                </div>
+            </div>
+            <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
+                <div class="text">
+                    <p>{{global.projectSelected.description}}</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="intro-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div class="htit">
+                    <h4>Disposición</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="intro-section section-padding"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div class="htit">
+                    <h4>Concepto</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="intro-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div class="htit">
+                    <h4>Ejecución</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section>
+    <div class="container-fluid">
+        <div class="video-wrapper section-padding bg-img parallaxie valign"
+            data-background="img/portfolio/project1/vid.jpg" data-overlay-dark="4">
+            <div class="full-width text-center">
+                <a class="vid" href="https://vimeo.com/127203262">
+                    <div class="vid-butn">
+                        <span class="icon">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+<section class="projdtal">
+    <div class="justified-gallery">
+        <a href="assets/img/portfolio/project1/8.jpg">
+            <img alt="" src="assets/img/portfolio/project1/8.jpg" />
+        </a>
+        <a href="assets/img/portfolio/project1/9.jpg">
+            <img alt="" src="assets/img/portfolio/project1/9.jpg" />
+        </a>
+    </div>
+</section>
+
+
+
+<!-- <section class="call-action nogif next">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content text-center">
+                    <a href="project-details2.html">
+                        <h6 class="wow" data-splitting>Next Project</h6>
+                        <h2 class="wow" data-splitting><b> Luxury </b> Furniture</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nxt-img bg-img" data-background="img/portfolio/project1/bg.jpg"></div>
+</section> -->
