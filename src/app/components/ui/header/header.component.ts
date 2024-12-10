@@ -9,7 +9,17 @@ import { GlobalService } from '../../../services/global.service';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-constructor (
-  public global: GlobalService
-){}
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+
+  constructor (
+    public global: GlobalService
+  ){}
 }

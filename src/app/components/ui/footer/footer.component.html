@@ -8,7 +8,7 @@
                             <img src="assets/img/logo.png" alt="">
                         </a>
                     </div>
-                    <p>Our team takes over everything, from an idea and concept development to realization.</p>
+                    <p>Nosotros nos encargamos de todo, desde la idea y concepto de desarrollo hasta la realización.</p>
                     <div class="social-icon">
                         <a href="https://www.facebook.com/EspatiumArquitectos" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a><i class="fab fa-twitter"></i></a>
@@ -20,13 +20,14 @@
             <div class="col-lg-2">
                 <div class="item usful-links">
                     <div class="fothead">
-                        <h6>Useful Links</h6>
+                        <h6>Links Útiles</h6>
                     </div>
                     <ul>
-                        <li><i class="fas fa-chevron-right"></i> <a>Interior Design</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a>Design Agency</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a>Mattress Shop</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a>Contact Us</a></li>
+                        <li><i class="fas fa-chevron-right" (click)="global.setRoute('/services')"></i> <a>Servicios</a></li>
+                        <li><i class="fas fa-chevron-right" (click)="global.setRoute('/prices')"></i> <a>Precios</a></li>
+                        <li><i class="fas fa-chevron-right" (click)="global.setRoute('/resources')"></i> <a>Recursos</a></li>
+                        <li><i class="fas fa-chevron-right" (click)="global.setRoute('/projects')"></i> <a>Projectos</a></li>
+                        <li><i class="fas fa-chevron-right" (click)="global.setRoute('/contact')"></i> <a>Contactanos</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,103 @@
+<header class="pages-header bg-img valign parallaxie" data-background="assets/img/pg1.jpg" data-overlay-dark="5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cont text-center">
+                    <h1>Contacto</h1>
+                    <div class="path">
+                        <a (click)="global.setRoute('home')">Inicio</a><span>/</span><a class="active">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ==================== End Header ==================== -->
+
+
+
+<!-- ==================== Start about ==================== -->
+
+<section class="contact">
+    <div class="info bg-gray pt-80 pb-80">
+        <div class="container">
+            <h2 style="text-align: center;">Contacta con nosotros y ¡Prepárate para arrancar a lo Grande!
+               </h2>
+               
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="item">
+                        <span class="icon pe-7s-phone"></span>
+                        <div class="cont">
+                            <h6 class="custom-font">Call Us</h6>
+                            <p>+7 (111) 1234 56789</p>
+                            <p>+1 (000) 9876 54321</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <span class="icon pe-7s-mail-open"></span>
+                        <div class="cont">
+                            <h6 class="custom-font">Email Us</h6>
+                            <p>contactArcho.com</p>
+                            <p>Usernamewebsite.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <span class="icon pe-7s-map"></span>
+                        <div class="cont">
+                            <h6 class="custom-font">Address</h6>
+                            <p>B17 Princess Road, London, Greater London NW18JR, United Kingdom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60203.85988292291!2d-99.20516!3d19.423583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f14a0eaaab%3A0xd3eec920f8f0df1f!2sC.%20Montes%20Urales%20755-5%20piso%20oficina%205459%2C%20Lomas%20-%20Virreyes%2C%20Lomas%20de%20Chapultepec%2C%20Miguel%20Hidalgo%2C%2011000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1733801688081!5m2!1ses-419!2sus" 
+                    style="border:0; width: 100%; height: 100%; min-height: 500px; display: block;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="col-lg-6 form">
+                <h2 style="text-align: center;">Escribenos</h2>
+                <h4 style="text-align: center;"> ¿Listo para que Diseñemos tu proyecto?</h4>
+
+                <form id="contact-form" method="post" style="padding-top: 20px;">
+    
+                    <div class="messages"></div>
+    
+                    <div class="controls">
+    
+                        <div class="form-group">
+                            <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+                        </div>
+    
+                        <div class="form-group">
+                            <input id="form_email" type="email" name="email" placeholder="Email"
+                                required="required">
+                        </div>
+    
+                        <div class="form-group">
+                            <textarea id="form_message" name="message" placeholder="Message" rows="4"
+                                required="required"></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn-curve btn-color"><span>Send Message</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,41 +1,39 @@
-
 <nav class="navbar change navbar-expand-lg">
     <div class="container">
 
         <!-- Logo -->
-        <a class="logo" >
+        <a class="logo" (click)="global.setRoute('home')">
             <img src="assets/img/logo.png" alt="logo">
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" (click)="toggleMenu()"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"><i class="fas fa-bars"></i></span>
         </button>
 
         <!-- navbar links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" [class.show]="isMenuOpen" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
-                    <a class="nav-link" >Inicio</a>
-                   
+                <li class="nav-item">
+                    <a class="nav-link" (click)="global.setRoute('home'); closeMenu()">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Espatium</a>
+                    <a class="nav-link" (click)="global.setRoute('about'); closeMenu()">Espatium</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" >Servicios</a>
+                    <a class="nav-link" (click)="global.setRoute('services'); closeMenu()">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" >Precios</a>
+                    <a class="nav-link" (click)="global.setRoute('price'); closeMenu()">Precios</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" (click)="global.setRoute('projects'); closeMenu()">
                     <a class="nav-link" >Proyectos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" >Recursos de diseño</a>
+                    <a class="nav-link" (click)="global.setRoute('resources'); closeMenu()">Recursos de diseño</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" >Contacto</a>
+                    <a class="nav-link" (click)="global.setRoute('contact'); closeMenu()">Contacto</a>
                 </li>
                 
             </ul>

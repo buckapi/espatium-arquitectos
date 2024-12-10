@@ -9,6 +9,12 @@ import { HeaderComponent } from './components/ui/header/header.component';
 import { FooterComponent } from './components/ui/footer/footer.component';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
+import { ServicesComponent } from './components/services/services.component';
+import { ResourcesComponent } from './components/resources/resources.component';
+import { PriceComponent } from './components/price/price.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,7 +22,13 @@ import { Inject, PLATFORM_ID } from '@angular/core';
     CommonModule,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectsComponent,
+    ContactComponent,
+    AboutComponent,
+    ServicesComponent,
+    ResourcesComponent,
+    PriceComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -43,25 +55,7 @@ export class AppComponent {
     if (typeof document !== 'undefined') {
       this.scriptLoader
         .loadScripts([
-         /*  'assets/js/jquery-1.12.4.min.js',
-          'assets/js/popper.min.js',
-          'assets/js/bootstrap.min.js',
-          'assets/js/wow.min.js',
-          'assets/js/jquery.waypoints.min.js',
-          'assets/js/jquery.counterup.min.js',
-          'assets/js/owl.carousel.min.js',
-          'assets/js/slick.min.js',
-          'assets/js/backToTop.js',
-          'assets/js/metismenu.js',
-          'assets/js/gsap.min.js',
-          'assets/js/gsap-scroll-to-plugin.js',
-          'assets/js/SplitText.min.js',
-          'assets/js/ScrollSmoother.min.js',
-          'assets/js/ScrollTrigger.min.js',
-          'assets/js/smoother-script.js',
-          'assets/js/heading-animation.js',
-          'assets/js/paragraph-animation.js',
-          'assets/js/main.js', */
+        
           'assets/js/jquery-3.0.0.min.js',
           'assets/js/jquery-migrate-3.0.0.min.js',
           'assets/js/plugins.js',

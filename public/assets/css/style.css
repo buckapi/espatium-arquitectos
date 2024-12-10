@@ -1232,7 +1232,7 @@ body {
   .navbar .icon-bar {
     color: #d8b771; }
   .navbar .navbar-nav .nav-link {
-    font-size: 13px;
+    font-size: 17px;
     font-weight: 400;
     color: #d8b771;
     letter-spacing: 1px;
@@ -1359,11 +1359,11 @@ body {
     padding: 15px 0;
     color: #111; }
   .light .social-icon, .nav-scroll .social-icon {
-    border-left: 1px solid rgba(0, 0, 0, 0.1); }
+    border-left: 1px solid #d8b771; }
     .light .social-icon a, .nav-scroll .social-icon a {
-      color: #000; }
+      color: #156d8f; }
   .light .search, .nav-scroll .search {
-    color: #000;
+    color: #156d8f;
     border-left: 1px solid rgba(0, 0, 0, 0.1); }
 
 /* ====================== [ End navbar ] ====================== */
@@ -3393,10 +3393,10 @@ body {
 .main-footer {
   padding: 100px 0 0; }
   .main-footer.dark {
-    background: #87878780;
-    color: #fff; }
+    background: #02638a;
+    color: #ddc287; }
   .main-footer .abot p {
-    font-size: 13px; }
+    font-size: 15px; }
   .main-footer .abot .social-icon {
     margin-top: 20px; }
     .main-footer .abot .social-icon a {
@@ -3404,7 +3404,7 @@ body {
       height: 45px;
       line-height: 45px;
       text-align: center;
-      font-size: 13px;
+      font-size: 15px;
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 50%;
       margin-right: 3px;
@@ -3412,22 +3412,22 @@ body {
       -o-transition: all .4s;
       transition: all .4s; }
       .main-footer .abot .social-icon a:hover {
-        border-color: #156d8f;
-        color: #156d8f; }
+        border-color: #ddc287;
+        color: #ddc287; }
   .main-footer .usful-links ul {
     margin: 0; }
     .main-footer .usful-links ul li {
-      font-size: 13px;
+      font-size: 15px;
       margin-bottom: 10px; }
       .main-footer .usful-links ul li:hover {
-        color: #156d8f; }
+        color: #ddc287; }
       .main-footer .usful-links ul li i {
         font-size: 10px;
-        color: #156d8f;
+        color: #ddc287;
         margin-right: 5px; }
   .main-footer .fothead h6 {
-    color: #156d8f;
-    font-size: 12px;
+    color: #ddc287;
+    font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 30px; }
@@ -3443,7 +3443,7 @@ body {
       background: rgba(255, 255, 255, 0.1);
       height: 1px; }
   .main-footer .fotcont p {
-    font-size: 13px; }
+    font-size: 15px; }
   .main-footer .sub-footer {
     padding: 30px 0;
     margin-top: 50px;
@@ -3499,7 +3499,7 @@ body {
     .navbar .navbar-collapse {
       max-height: 340px;
       overflow: auto;
-      background: #111;
+      background: #156d8f;
       text-align: center;
       padding: 10px 15px; }
     .navbar .nav-link {

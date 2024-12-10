@@ -4611,8 +4611,8 @@ tbody.collapse.show {
     .navbar-expand-lg .navbar-collapse {
         display: -webkit-box !important;
         display: -ms-flexbox !important;
-        display: flex !important;
-        -ms-flex-preferred-size: auto;
+/*         display: flex !important;
+ */        -ms-flex-preferred-size: auto;
         flex-basis: auto
     }
 
