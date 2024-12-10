@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { RealtimeProjectsService } from './realtime-projects.service';
 
 interface Project {
   // Define aquí las propiedades de tu proyecto
@@ -20,7 +21,9 @@ export class GlobalService {
   projects: any [] = [];
 
 
-  constructor() { }
+  constructor(
+    public realtimeprojects: RealtimeProjectsService
+  ) { }
   setRoute(route: string) {
     this.activeRoute = route;
     window.scrollTo(0, 0);
@@ -29,4 +32,8 @@ export class GlobalService {
     this.projectSelected = project;
     this.activeRoute = 'projectsdetails';
   }
+  getProjects() {
+    return this.realtimeprojects.projects$;
+  }
 }
+
